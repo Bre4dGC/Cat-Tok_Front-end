@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Cat Tok</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="shortcut icon" href="/img/CattokSiteLogo.png">
-  <link rel="stylesheet" href="/style/style.css">
-</head>
-</html>
   <head>
-    <header>
-      <body>
-        <div class="navbar">
-          <div class="top_nav-container">
-            <nav>
-              <div class="left-container">
-                <a href="/html/Main.html">
-                  <img src="/img/CattokLogo.png" alt="logo" class="logo" title="Rweboot">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cat Tok</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="/img/CattokSiteLogo.png" />
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <head>
+    <body>
+      <div class="navbar">
+        <div class="top_nav-container">
+          <nav>
+            <div class="left-container">
+              <a href="/html/Main.html">
+                <img
+                  src="/img/CattokLogo.png"
+                  alt="logo"
+                  class="logo"
+                  title="Rweboot"
+                />
+              </a>
+            </div>
+
+            <div class="center-container">
+              <form class="search-group" role="search">
+                <input
+                  type="search"
+                  class="search"
+                  placeholder="Search"
+                  role="combobox"
+                />
+                <button class="search-btn" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="right-container">
+              <div class="upload" role="button">
+                <a href="#" title="Upload">
+                  <i class="fa-solid fa-plus"></i>
+                  <span>Upload</span>
                 </a>
               </div>
-              <div class="center-container">
-                <form class="search-group" role="search">
-                  <input type="search" class="search" placeholder="Search" role="combobox">
-                  <button class="search-btn" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </form>
+
+              <div class="messages" role="button">
+                <a href="#" title="Messages">
+                  <i class="fa-solid fa-message"></i>
+                </a>
               </div>
-              <div class="right-container">
-                <div class="item" role="button" id="upload">
-                  <a href="#" title="Upload">
-                    <i class="fa-solid fa-plus"></i> 
-                    <span>Upload</span>       
-                  </a>
-                </div>
-                <div class="item" role="button">
-                  <a href="#" title="Messages">    
-                    <i class="fa-solid fa-message"></i>         
-                  </a>
-                </div>
-                <div class="item" role="button">
-                  <a href="#" title="Inbox">
-                    <i class="fa-solid fa-inbox"></i>              
-                  </a>
-                </div>
-                <div class="item" role="button">
-                  <a href="/html/Profile.html" title="Profile">
-                    <i class="fa-solid fa-address-card"></i>
-                  </a>
-                </div>
+
+              <div class="inbox" role="button">
+                <a href="#" title="Inbox">
+                  <i class="fa-solid fa-inbox"></i>
+                </a>
               </div>
-            </nav>
-          </div>
+
+              <div class="profile" role="button">
+                <a href="/html/Profile.html" title="Profile">
+                  <i class="fa-solid fa-address-card"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
+      </div>
+      <div class="content">
         <div class="sidebar-nav">
           <div class="side_nav-container">
             <nav>
@@ -93,11 +110,50 @@
               </ul>
             </nav>
           </div>
-        </div>
-      </body>
-    </header>
-    <MAIN>
 
-    </MAIN>
+          <div class="friend_list-container">
+            <ul>
+              <li>
+                <div class="friend"></div>
+              </li>
+
+              <li>
+                <div class="friend"></div>
+              </li>
+
+              <li>
+                <div class="friend"></div>
+              </li>
+
+              <li>
+                <div class="friend"></div>
+              </li>
+
+              <li>
+                <div class="friend"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-container">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Developers</a>
+            <a href="#">Technologies</a>
+            <a href="#">Channel</a>
+
+            <h4>Terms & Policies</h4>
+            <a href="#">Help</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" id="cat">&copy;&nbsp;2024 CatTok</a>
+          </div>
+        </div>
+
+        <div class="content-main">
+          <div class="main-container"></div>
+        </div>
+      </div>
+    </body>
   </head>
 </html>
