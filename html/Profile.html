@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>Profile</title>
+  <title>Cat Tok</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="shortcut icon" href="/img/CattokSiteLogo.png">
   <link rel="stylesheet" href="/style/style.css">
 </head>
@@ -12,7 +13,7 @@
     <header>
       <body>
         <div class="navbar">
-          <div class="container">
+          <div class="top_nav-container">
             <nav>
               <div class="left-container">
                 <a href="/html/Main.html">
@@ -22,41 +23,75 @@
               <div class="center-container">
                 <form class="search-group" role="search">
                   <input type="search" class="search" placeholder="Search" role="combobox">
-                  <button class="search-btn" type="submit">OK</button>
+                  <button class="search-btn" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
                 </form>
               </div>
               <div class="right-container">
                 <div class="upload" role="button">
                   <a href="#" title="Upload">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                      <path fill-rule="evenodd" d="M12 3a1 1 0 0 1 .78.375l4 5a1 1 0 1 1-1.56 1.25L13 6.85V14a1 1 0 1 1-2 0V6.85L8.78 9.626a1 1 0 1 1-1.56-1.25l4-5A1 1 0 0 1 12 3ZM9 14v-1H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-4v1a3 3 0 1 1-6 0Zm8 2a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z" clip-rule="evenodd"/>
-                    </svg>                  
+                    <i class="fa-solid fa-plus"></i> 
+                    <span>Upload</span>       
                   </a>
                 </div>
                 <div class="messages" role="button">
-                  <a href="#" title="Messages">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                      <path fill-rule="evenodd" d="M3 5.983C3 4.888 3.895 4 5 4h14c1.105 0 2 .888 2 1.983v8.923a1.992 1.992 0 0 1-2 1.983h-6.6l-2.867 2.7c-.955.899-2.533.228-2.533-1.08v-1.62H5c-1.105 0-2-.888-2-1.983V5.983Zm5.706 3.809a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Zm2.585.002a1 1 0 1 1 .003 1.414 1 1 0 0 1-.003-1.414Zm5.415-.002a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Z" clip-rule="evenodd"/>
-                    </svg>                  
+                  <a href="#" title="Messages">    
+                    <i class="fa-solid fa-message"></i>         
                   </a>
                 </div>
                 <div class="inbox" role="button">
                   <a href="#" title="Inbox">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                      <path fill-rule="evenodd" d="M5.024 3.783A1 1 0 0 1 6 3h12a1 1 0 0 1 .976.783L20.802 12h-4.244a1.99 1.99 0 0 0-1.824 1.205 2.978 2.978 0 0 1-5.468 0A1.991 1.991 0 0 0 7.442 12H3.198l1.826-8.217ZM3 14v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5h-4.43a4.978 4.978 0 0 1-9.14 0H3Z" clip-rule="evenodd"/>
-                    </svg>                  
+                    <i class="fa-solid fa-inbox"></i>              
                   </a>
                 </div>
                 <div class="profile" role="button">
                   <a href="/html/Profile.html" title="Profile">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                      <path fill-rule="evenodd" d="M4 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4Zm10 5a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-8-5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm1.942 4a3 3 0 0 0-2.847 2.051l-.044.133-.004.012c-.042.126-.055.167-.042.195.006.013.02.023.038.039.032.025.08.064.146.155A1 1 0 0 0 6 17h6a1 1 0 0 0 .811-.415.713.713 0 0 1 .146-.155c.019-.016.031-.026.038-.04.014-.027 0-.068-.042-.194l-.004-.012-.044-.133A3 3 0 0 0 10.059 14H7.942Z" clip-rule="evenodd"/>
-                    </svg>
+                    <i class="fa-solid fa-address-card"></i>
                   </a>
                 </div>
               </div>
             </nav>
-            <hr>
+          </div>
+        </div>
+        <div class="sidebar-nav">
+          <div class="side_nav-container">
+            <nav>
+              <ul>
+                <li>
+                  <div class="item">
+                    <a href="/html/Main.html" class="nav-foryou">
+                      <i class="fa-solid fa-house"></i>
+                      <span>For You</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <a href="#" class="nav-following">
+                      <i class="fa-solid fa-users"></i>
+                      <span>Following</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <a href="#" class="nav-friends">
+                      <i class="fa-solid fa-user-group"></i>
+                      <span>Friends</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <a href="/html/Profile.html" class="nav-profile">
+                      <i class="fa-solid fa-address-card"></i>
+                      <span>Profile</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </body>
